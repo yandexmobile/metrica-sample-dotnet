@@ -1,0 +1,16 @@
+Bin
+obj
+Backup
+Thumbs.db
+/TestResults
+*.cachefile
+*.sap
+*.suo
+*.user
+_ReSharper.*
+*/PerformanceLogs
+*/PerfLogs
+/packages
+/.cov
+/*.DotSettings
+*/Help

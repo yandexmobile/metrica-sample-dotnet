@@ -1,0 +1,23 @@
+﻿<Application
+    x:Class="Yandex.Metrica.Sample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:metrica="clr-namespace:Yandex.Metrica;assembly=Yandex.Metrica">
+
+    <Application.ApplicationLifetimeObjects>
+        <shell:PhoneApplicationService />
+    </Application.ApplicationLifetimeObjects>
+
+    <Application.Resources>
+
+        <!--
+            Enter your ApiKey here
+            1111 is ApiKey for Yandex.Metrica for Apps sample
+            -->
+        <metrica:CounterBootstrapper
+            x:Key="CounterBootstrapper"
+            ApiKey="1111" />
+
+    </Application.Resources>
+</Application>

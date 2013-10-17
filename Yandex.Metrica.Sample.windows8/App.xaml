@@ -1,0 +1,24 @@
+﻿<Application
+    x:Class="Yandex.Metrica.Sample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metrica="using:Yandex.Metrica">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                    Source="Common/StandardStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--
+                Enter your ApiKey here
+                1111 is ApiKey for Yandex.Metrica for Apps sample
+                -->
+            <metrica:CounterBootstrapper
+                x:Key="CounterBootstrapper"
+                ApiKey="1111" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
