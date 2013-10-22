@@ -75,9 +75,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Yandex.Metrica, Version=1.0.5041.48, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Yandex.Metrica, Version=1.0.5043.51, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Yandex.Metrica.1.0.5041.48\lib\windows8\Yandex.Metrica.dll</HintPath>
+      <HintPath>..\packages\Yandex.Metrica.1.0.5043.51\lib\windows8\Yandex.Metrica.dll</HintPath>
     </Reference>
     <Reference Include="Zlib.Portable, Version=1.9.1.9000, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

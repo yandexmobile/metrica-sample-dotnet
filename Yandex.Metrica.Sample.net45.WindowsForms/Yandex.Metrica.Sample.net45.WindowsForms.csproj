@@ -44,8 +44,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Yandex.Metrica">
-      <HintPath>..\packages\Yandex.Metrica.1.0.5041.48\lib\net45\Yandex.Metrica.dll</HintPath>
+    <Reference Include="Yandex.Metrica, Version=1.0.5043.51, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Yandex.Metrica.1.0.5043.51\lib\net45\Yandex.Metrica.dll</HintPath>
     </Reference>
     <Reference Include="Zlib.Portable">
       <HintPath>..\packages\Zlib.Portable.1.9.2\lib\portable-net4+sl4+wp71+win8\Zlib.Portable.dll</HintPath>
