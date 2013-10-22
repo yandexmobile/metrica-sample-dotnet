@@ -6,7 +6,9 @@ namespace Yandex.Metrica.Sample
     {
         public App()
         {
-            Counter.Start(5680);
+            // Enter your ApiKey here
+            // 1111 is ApiKey for Yandex.Metrica for Apps sample
+            Counter.Start(1111);
         }
 
         protected override void OnExit(ExitEventArgs e)

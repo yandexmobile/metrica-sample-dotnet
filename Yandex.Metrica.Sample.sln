@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.wp7",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.windows8", "Yandex.Metrica.Sample.windows8\Yandex.Metrica.Sample.windows8.csproj", "{6D21E2C7-3668-40EE-88FF-FC042F96078A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.net45", "Yandex.Metrica.Sample.net45\Yandex.Metrica.Sample.net45.csproj", "{05C6114B-F798-4312-9F24-01E5FD791F6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.net45.WPF", "Yandex.Metrica.Sample.net45\Yandex.Metrica.Sample.net45.WPF.csproj", "{05C6114B-F798-4312-9F24-01E5FD791F6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F0B9C93A-A557-4565-B3AE-2228A0B15ED4}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.net45.WindowsForms", "Yandex.Metrica.Sample.net45.WindowsForms\Yandex.Metrica.Sample.net45.WindowsForms.csproj", "{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,14 @@ Global
 		{05C6114B-F798-4312-9F24-01E5FD791F6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05C6114B-F798-4312-9F24-01E5FD791F6C}.Release|ARM.ActiveCfg = Release|Any CPU
 		{05C6114B-F798-4312-9F24-01E5FD791F6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

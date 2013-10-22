@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 
-[assembly: AssemblyTitle("Yandex.Metrica.Demo.Desktop")]
+[assembly: AssemblyTitle("Yandex.Metrica sample for WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 

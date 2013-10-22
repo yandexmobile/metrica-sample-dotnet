@@ -1,4 +1,4 @@
-# Yandex.Metrica for Apps sample for .NET, Windows Phone and Windows Store applications
+# Yandex.Metrica for Apps sample for Windows Phone, Windows Store, .NET 4.5
 
 ## What this is
 
@@ -7,12 +7,12 @@ Sample applications using Yandex.Metrica for Apps SDK.
 
 ## Required reading
 
-Please check out the [Yandex.Metrica for Apps API page][API].
+Please check out the [Yandex.Metrica for Apps documentation page][API].
 
 
 ## Installing
 
-### Register for a Yandex API key.
+### Register for a Yandex ApiKey.
 
 You can register your app at the: [Yandex.Metrica for Apps homepage][REGISTER].
 
@@ -25,14 +25,18 @@ To start using Yandex.Metrica for Apps SDK:
 
 ## Samples
 
-There are four samples included in the SDK. 
+There are five sample applications using Yandex.Metrica for Apps:
 
-- Yandex.Metrica.wp7: a very simple application using Yandex.Metrica for Apps for Windows Phone 7.5.
-- Yandex.Metrica.wp8: a very simple application using Yandex.Metrica for Apps for Windows Phone 8.
-- Yandex.Metrica.windows8: a very simple application using Yandex.Metrica for Apps for Windows Store.
-- Yandex.Metrica.net45: a very simple application using Yandex.Metrica for Apps for .NET.
+- **Yandex.Metrica.wp7** Windows Phone 7.5 (please note Microsoft.Bcl.Async package reference)
+- **Yandex.Metrica.wp8** Windows Phone 8.0
+- **Yandex.Metrica.windows8** Windows Store
+- **Yandex.Metrica.net45.WPF** .NET 4.5 WPF
+- **Yandex.Metrica.net45.WindowsForms** .NET 4.5 Windows Forms
 
-Important: It’s required to set ApiKey in the downloaded source code of the samples before it would be possible to run them. To get these register your application here: [Yandex.Metrica for Apps homepage][REGISTER].
+Important: Samples use **ApiKey** value `1111`. The key is specified in **App.xaml** or **App.xaml.cs** or **Program.cs**.
+
+To get your own ApiKey register your application here: [Yandex.Metrica for Apps homepage][REGISTER].
+
 Note: Model-View-ViewModel (MVVM) pattern was not used in the samples. It’s done this way in order to make the code browsing and understanding easier for the SDK user. 
 
 
@@ -40,9 +44,9 @@ Note: Model-View-ViewModel (MVVM) pattern was not used in the samples. It’s done
 
 ### Which types of applications and frameworks are supported by the SDK?
 
-- .NET 4.5 applications.
 - Windows Phone applications (7.5 and higher).
 - Windows Store applications.
+- .NET 4.5 applications.
 
 ### Is there any more documentation available?
 
@@ -54,5 +58,5 @@ License agreement on use of Yandex.Metrica for Apps SDK is available at: http://
 
 
 [LICENSE]: http://legal.yandex.ru/metrica_termsofuse/
-[API]: http://appmetrica.yandex.ru/ "Yandex.Metrica for Apps API page"
+[API]: http://api.yandex.ru/metrica-mobile-sdk/doc/mobile-sdk-dg/concepts/about.xml "Yandex.Metrica for Apps documentation page"
 [REGISTER]: http://appmetrica.yandex.ru/ "Yandex.Metrica for Apps homepage"
