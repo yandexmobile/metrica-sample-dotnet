@@ -4,17 +4,20 @@ namespace Yandex.Metrica.Sample
 {
     public partial class App
     {
+        /* Replace API_KEY with your unique API key. Please, read official documentation how to obtain one:
+         * https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/net-quickstart-docpage/
+         */
+        private const string ApiKey = "API_KEY";
+
         public App()
         {
-            // Enter your ApiKey here
-            // 1111 is ApiKey for Yandex.Metrica for Apps sample
-            Counter.Start(1111);
+            YandexMetrica.Activate(ApiKey);
         }
 
         protected override void OnExit(ExitEventArgs e)
         {
             // let counter save current state
-            Counter.ReportExit();
+            YandexMetrica.ReportExit();
 
             base.OnExit(e);
         }

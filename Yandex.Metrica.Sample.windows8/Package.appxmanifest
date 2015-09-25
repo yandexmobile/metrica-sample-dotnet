@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="f68a519e-001a-4097-8d79-7e8d9076f4b6" Publisher="CN=kzaikin" Version="1.0.9999.9999" />
+  <Identity Name="f68a519e-001a-4097-8d79-7e8d9076f4b6"
+            Publisher="CN=yandex"
+            Version="2.0.5743.339" />
   <Properties>
     <DisplayName>Yandex.Metrica.Demo.WinRT</DisplayName>
-    <PublisherDisplayName>kzaikin</PublisherDisplayName>
+    <PublisherDisplayName>Yandex</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -14,9 +16,17 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Yandex.Metrica.Demo.WinRT.App">
-      <VisualElements DisplayName="Yandex.Metrica.Demo.WinRT" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Yandex.Metrica.Demo.WinRT" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+    <Application Id="App"
+                 Executable="$targetnametoken$.exe"
+                 EntryPoint="Yandex.Metrica.Demo.WinRT.App">
+      <VisualElements DisplayName="Yandex.Metrica.Demo.WinRT"
+                      Logo="Assets\Square150x150Logo.png"
+                      SmallLogo="Assets\Square30x30Logo.png"
+                      Description="Sample description"
+                      ForegroundText="light"
+                      BackgroundColor="transparent">
+        <DefaultTile ShowName="noLogos"
+                     WideLogo="Assets\Wide310x150Logo.png" />
         <SplashScreen Image="Assets\SplashScreen.png" />
       </VisualElements>
     </Application>
