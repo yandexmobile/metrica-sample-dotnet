@@ -53,7 +53,6 @@ namespace Yandex.Metrica.Sample
         {
             if (RootVisual != RootFrame)
                 RootVisual = RootFrame;
-
             RootFrame.Navigated -= CompleteInitializePhoneApplication;
         }
 

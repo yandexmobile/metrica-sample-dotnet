@@ -9,19 +9,19 @@ namespace Yandex.Metrica.Sample.net45.WindowsForms
         {
             InitializeComponent();
 
-            Counter.ReportEvent("Form1 Loaded");
+            YandexMetrica.ReportEvent("Form1 Loaded");
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
 
-            Counter.ReportEvent("Form1 Loaded");
+            YandexMetrica.ReportEvent("Form1 Loaded");
         }
 
         private void Button1Click(object sender, EventArgs e)
         {
-            Counter.ReportEvent("Button click");
+            YandexMetrica.ReportEvent("Button click");
         }
 
         private void Button2Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace Yandex.Metrica.Sample.net45.WindowsForms
             }
             catch (Exception ex)
             {
-                Counter.ReportError("Main button error", ex);
+                YandexMetrica.ReportError("Main button error", ex);
             }
         }
 

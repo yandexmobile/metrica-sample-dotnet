@@ -6,14 +6,13 @@ namespace Yandex.Metrica.Sample
     /// <summary>
     /// Report sample application events.
     /// </summary>
-    public sealed partial class MainPage
+    sealed partial class MainPage
     {
         public MainPage()
         {
             InitializeComponent();
 
-            Counter.ReportEvent("MainPage Ctor");
-            Counter.DispatchPeriod = TimeSpan.FromSeconds(5);
+            YandexMetrica.ReportEvent("MainPage Ctor");
 
             Loaded += OnLoaded;
             Unloaded += OnUnloaded;
@@ -21,17 +20,17 @@ namespace Yandex.Metrica.Sample
 
         private void OnUnloaded(object sender, RoutedEventArgs routedEventArgs)
         {
-            Counter.ReportEvent("MainPage Unloaded");
+            YandexMetrica.ReportEvent("MainPage Unloaded");
         }
 
         private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
         {
-            Counter.ReportEvent("MainPage Loaded");
+            YandexMetrica.ReportEvent("MainPage Loaded");
         }
 
         private void OnClick(object sender, RoutedEventArgs e)
         {
-            Counter.ReportEvent("Button click");
+            YandexMetrica.ReportEvent("Button click");
         }
 
         private void OnError(object sender, RoutedEventArgs e)
@@ -42,7 +41,7 @@ namespace Yandex.Metrica.Sample
             }
             catch (Exception ex)
             {
-                Counter.ReportError("Main button error", ex);
+                YandexMetrica.ReportError("Main button error", ex);
             }
         }
 

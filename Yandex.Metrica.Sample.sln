@@ -1,14 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.wp8", "Yandex.Metrica.Sample.wp8\Yandex.Metrica.Sample.wp8.csproj", "{647690FD-7154-4EB0-9136-3598B47545A8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.wp7", "Yandex.Metrica.Sample.wp7\Yandex.Metrica.Sample.wp7.csproj", "{E315C0ED-66C4-458D-B875-17522BE0B36D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.windows8", "Yandex.Metrica.Sample.windows8\Yandex.Metrica.Sample.windows8.csproj", "{6D21E2C7-3668-40EE-88FF-FC042F96078A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.net45.WPF", "Yandex.Metrica.Sample.net45.WPF\Yandex.Metrica.Sample.net45.WPF.csproj", "{05C6114B-F798-4312-9F24-01E5FD791F6C}"
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F0B9C93A-A557-4565-B3AE-2228A0B15ED4}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -21,7 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.wp8", "Yandex.Metrica.Sample.wp8\Yandex.Metrica.Sample.wp8.csproj", "{647690FD-7154-4EB0-9136-3598B47545A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.windows8", "Yandex.Metrica.Sample.windows8\Yandex.Metrica.Sample.windows8.csproj", "{6D21E2C7-3668-40EE-88FF-FC042F96078A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.net45.WPF", "Yandex.Metrica.Sample.net45.WPF\Yandex.Metrica.Sample.net45.WPF.csproj", "{05C6114B-F798-4312-9F24-01E5FD791F6C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.net45.WindowsForms", "Yandex.Metrica.Sample.net45.WindowsForms\Yandex.Metrica.Sample.net45.WindowsForms.csproj", "{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.wp81Silverlight", "Yandex.Metrica.Sample.wp81Silverlight\Yandex.Metrica.Sample.wp81Silverlight.csproj", "{4F702DFA-B88A-4D18-9697-E851B4873059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Sample.wpa81", "Yandex.Metrica.Sample.wpa81\Yandex.Metrica.Sample.wpa81.csproj", "{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,16 +55,6 @@ Global
 		{647690FD-7154-4EB0-9136-3598B47545A8}.Release|x86.ActiveCfg = Release|x86
 		{647690FD-7154-4EB0-9136-3598B47545A8}.Release|x86.Build.0 = Release|x86
 		{647690FD-7154-4EB0-9136-3598B47545A8}.Release|x86.Deploy.0 = Release|x86
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Release|ARM.ActiveCfg = Release|Any CPU
-		{E315C0ED-66C4-458D-B875-17522BE0B36D}.Release|x86.ActiveCfg = Release|Any CPU
 		{6D21E2C7-3668-40EE-88FF-FC042F96078A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D21E2C7-3668-40EE-88FF-FC042F96078A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D21E2C7-3668-40EE-88FF-FC042F96078A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -87,6 +81,42 @@ Global
 		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|ARM.ActiveCfg = Release|Any CPU
 		{A82BBF5D-8B88-4762-A9DB-A59A53BC527F}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|ARM.Build.0 = Debug|ARM
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|x86.ActiveCfg = Debug|x86
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|x86.Build.0 = Debug|x86
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Debug|x86.Deploy.0 = Debug|x86
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|ARM.ActiveCfg = Release|ARM
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|ARM.Build.0 = Release|ARM
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|ARM.Deploy.0 = Release|ARM
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|x86.ActiveCfg = Release|x86
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|x86.Build.0 = Release|x86
+		{4F702DFA-B88A-4D18-9697-E851B4873059}.Release|x86.Deploy.0 = Release|x86
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|ARM.Build.0 = Debug|ARM
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|x86.ActiveCfg = Debug|x86
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|x86.Build.0 = Debug|x86
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Debug|x86.Deploy.0 = Debug|x86
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|ARM.ActiveCfg = Release|ARM
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|ARM.Build.0 = Release|ARM
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|ARM.Deploy.0 = Release|ARM
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|x86.ActiveCfg = Release|x86
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|x86.Build.0 = Release|x86
+		{8DDA94E6-B2CA-49EF-9EDB-5A98EE0B454B}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

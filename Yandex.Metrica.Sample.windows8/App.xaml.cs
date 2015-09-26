@@ -9,7 +9,7 @@ namespace Yandex.Metrica.Sample
     /// <summary>
     /// Default Application class.
     /// </summary>
-    sealed partial class App
+    public sealed partial class App
     {
         public App()
         {
