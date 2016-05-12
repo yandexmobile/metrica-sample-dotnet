@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="Yandex.Metrica.UWP8._1.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metrica="using:Yandex.Metrica">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <metrica:Bootstrapper
+                x:Key="Bootstrapper"
+                ApiKey="141aee51-f778-4951-adb8-97d811aa06e1" />
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

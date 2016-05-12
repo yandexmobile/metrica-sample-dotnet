@@ -25,14 +25,7 @@ To start using Yandex.Metrica for Apps SDK:
 
 ## Samples
 
-There are six sample applications using AppMetrica:
-
-- **Yandex.Metrica.wp8** Windows Phone 8.0
-- **Yandex.Metrica.wpa81** Windows Phone 8.1
-- **Yandex.Metrica.wp81Silverlight** Windows Phone 8.1 (Silverlight)
-- **Yandex.Metrica.windows8** Windows Store
-- **Yandex.Metrica.net45.WPF** .NET 4.5 WPF
-- **Yandex.Metrica.net45.WindowsForms** .NET 4.5 Windows Forms
+There are sample applications using AppMetrica.
 
 Important: Samples don't use any **ApiKey** value. The key should be specified in **App.xaml** or **App.xaml.cs** or **Program.cs**.
 
