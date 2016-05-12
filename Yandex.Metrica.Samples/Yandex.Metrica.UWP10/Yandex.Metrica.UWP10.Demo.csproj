@@ -130,10 +130,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Yandex.Metrica\UWP10\Yandex.Metrica.UWP10.csproj">
-      <Project>{327cd554-b3da-4776-a050-89bd2623e34e}</Project>
-      <Name>Yandex.Metrica.UWP10</Name>
-    </ProjectReference>
+    <Reference Include="Yandex.Metrica.UWP10">
+      <HintPath>..\..\packages\Yandex.Metrica.2.2.5976.503\lib\uwp10\Yandex.Metrica.UWP10.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

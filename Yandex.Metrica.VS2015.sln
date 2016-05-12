@@ -3,19 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{94DF2D08-1C09-4D52-940F-BBBF2E85CC4F}"
-	ProjectSection(SolutionItems) = preProject
-		Obfuscate\Metrica.obfuscar = Obfuscate\Metrica.obfuscar
-		Nuget\NuGetPack.cmd = Nuget\NuGetPack.cmd
-		Obfuscate\Obfuscate.cmd = Obfuscate\Obfuscate.cmd
-		UpdateVersion.vbs = UpdateVersion.vbs
-		Nuget\Yandex.Metrica.nuspec = Nuget\Yandex.Metrica.nuspec
-		Obfuscate\Yandex.Metrica.WinRT.xml = Obfuscate\Yandex.Metrica.WinRT.xml
-		Obfuscate\Yandex.Metrica.WinRT81.xml = Obfuscate\Yandex.Metrica.WinRT81.xml
-		Obfuscate\Yandex.Metrica.xml = Obfuscate\Yandex.Metrica.xml
-		Obfuscate\Yandex.Metrica1Silverlight.xml = Obfuscate\Yandex.Metrica1Silverlight.xml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4AE57DDD-0878-4078-8A04-5B6FCE3F774B}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -23,23 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4AE57D
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A2CED8AA-65CC-40CD-B8DF-B20214EFBC44}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{0E251F44-5341-4CAD-88BF-302FF34341A4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Tests", "Yandex.Metrica.Tests\Yandex.Metrica.Tests.csproj", "{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.UWP10.Demo", "Yandex.Metrica.Samples\Yandex.Metrica.UWP10\Yandex.Metrica.UWP10.Demo.csproj", "{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Yandex.Metrica.UWP8.1", "Yandex.Metrica.UWP8.1", "{430D2AD2-3C7A-4A5B-B955-B61A197BC5E2}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Yandex.Metrica.UWP8.1.Shared", "Yandex.Metrica.Samples\Yandex.Metrica.UWP8.1\Yandex.Metrica.UWP8.1.Shared\Yandex.Metrica.UWP8.1.Shared.shproj", "{C9B73812-C34D-42B8-8C67-BA3821120272}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.RT8.1", "Yandex.Metrica\Yandex.Metrica.RT8.1.csproj", "{5388D104-2D17-4796-A0DC-48EFAEAB58F0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.WP8.1", "Yandex.Metrica\Yandex.Metrica.WP8.1.csproj", "{6975783C-F0AD-44A5-9C31-E340EAC2D613}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.UWP10", "Yandex.Metrica\UWP10\Yandex.Metrica.UWP10.csproj", "{327CD554-B3DA-4776-A050-89BD2623E34E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.UWP8.1.WindowsPhone", "Yandex.Metrica.Samples\Yandex.Metrica.UWP8.1\Yandex.Metrica.UWP8.1.WP\Yandex.Metrica.UWP8.1.WindowsPhone.csproj", "{BAA22583-C3AC-41E3-AF95-14ED6056B9E9}"
 EndProject
@@ -62,16 +37,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Release|ARM.ActiveCfg = Release|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Release|x64.ActiveCfg = Release|Any CPU
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD}.Release|x86.ActiveCfg = Release|Any CPU
 		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}.Debug|ARM.ActiveCfg = Debug|ARM
 		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}.Debug|ARM.Build.0 = Debug|ARM
@@ -92,54 +57,6 @@ Global
 		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}.Release|x86.ActiveCfg = Release|x86
 		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}.Release|x86.Build.0 = Release|x86
 		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188}.Release|x86.Deploy.0 = Release|x86
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|ARM.Build.0 = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|x64.Build.0 = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Debug|x86.Build.0 = Debug|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|ARM.ActiveCfg = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|ARM.Build.0 = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|x64.ActiveCfg = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|x64.Build.0 = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|x86.ActiveCfg = Release|Any CPU
-		{5388D104-2D17-4796-A0DC-48EFAEAB58F0}.Release|x86.Build.0 = Release|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|ARM.ActiveCfg = Debug|ARM
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|ARM.Build.0 = Debug|ARM
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|x64.Build.0 = Debug|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|x86.ActiveCfg = Debug|x86
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Debug|x86.Build.0 = Debug|x86
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|ARM.ActiveCfg = Release|ARM
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|ARM.Build.0 = Release|ARM
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|x64.ActiveCfg = Release|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|x64.Build.0 = Release|Any CPU
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|x86.ActiveCfg = Release|x86
-		{6975783C-F0AD-44A5-9C31-E340EAC2D613}.Release|x86.Build.0 = Release|x86
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|ARM.ActiveCfg = Debug|ARM
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|ARM.Build.0 = Debug|ARM
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|x64.ActiveCfg = Debug|x64
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|x64.Build.0 = Debug|x64
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|x86.ActiveCfg = Debug|x86
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Debug|x86.Build.0 = Debug|x86
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|ARM.ActiveCfg = Release|ARM
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|ARM.Build.0 = Release|ARM
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|x64.ActiveCfg = Release|x64
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|x64.Build.0 = Release|x64
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|x86.ActiveCfg = Release|x86
-		{327CD554-B3DA-4776-A050-89BD2623E34E}.Release|x86.Build.0 = Release|x86
 		{BAA22583-C3AC-41E3-AF95-14ED6056B9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BAA22583-C3AC-41E3-AF95-14ED6056B9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA22583-C3AC-41E3-AF95-14ED6056B9E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -193,9 +110,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{267E61F9-DDEB-4B69-8DE3-5661BFBF20FD} = {A2CED8AA-65CC-40CD-B8DF-B20214EFBC44}
-		{A5EBD3C7-D245-4BC3-B730-A5B9B4A18188} = {0E251F44-5341-4CAD-88BF-302FF34341A4}
-		{430D2AD2-3C7A-4A5B-B955-B61A197BC5E2} = {0E251F44-5341-4CAD-88BF-302FF34341A4}
 		{C9B73812-C34D-42B8-8C67-BA3821120272} = {430D2AD2-3C7A-4A5B-B955-B61A197BC5E2}
 		{BAA22583-C3AC-41E3-AF95-14ED6056B9E9} = {430D2AD2-3C7A-4A5B-B955-B61A197BC5E2}
 		{63A25E7B-D0FA-4971-B02A-0AC6057F084E} = {430D2AD2-3C7A-4A5B-B955-B61A197BC5E2}

@@ -103,13 +103,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="..\..\..\Yandex.Metrica\Yandex.Metrica.RT8.1.csproj">
-      <Project>{5388d104-2d17-4796-a0dc-48efaeab58f0}</Project>
-      <Name>Yandex.Metrica.RT8.1</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -119,6 +112,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="packages.config" />
     <None Include="Yandex.Metrica.UWP8.1.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +126,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Yandex.Metrica.RT8, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Yandex.Metrica.2.2.5976.503\lib\rt8\Yandex.Metrica.RT8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Yandex.Metrica.RT8.1, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Yandex.Metrica.2.2.5976.503\lib\rt81\Yandex.Metrica.RT8.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Yandex.Metrica.UWP10, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Yandex.Metrica.2.2.5976.503\lib\uwp10\Yandex.Metrica.UWP10.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
