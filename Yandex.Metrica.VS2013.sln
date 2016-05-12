@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{94DF2D08-1C09-4D52-940F-BBBF2E85CC4F}"
-	ProjectSection(SolutionItems) = preProject
-		Nuget\NuGetPack.cmd = Nuget\NuGetPack.cmd
-		Nuget\Yandex.Metrica.nuspec = Nuget\Yandex.Metrica.nuspec
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4AE57DDD-0878-4078-8A04-5B6FCE3F774B}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
