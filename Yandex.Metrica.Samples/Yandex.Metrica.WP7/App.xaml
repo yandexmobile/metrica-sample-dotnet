@@ -1,0 +1,22 @@
+﻿<Application 
+    x:Class="Yandex.Metrica.Phone.Silverlight.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:metrica="clr-namespace:Yandex.Metrica;assembly=Yandex.Metrica.WP7">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <metrica:Bootstrapper
+            x:Key="Bootstrapper"
+            ApiKey="141aee51-f778-4951-adb8-97d811aa06e1" />
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService 
+            Launching="Application_Launching" Closing="Application_Closing" 
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>
