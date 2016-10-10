@@ -38,18 +38,13 @@ Note: Model-View-ViewModel (MVVM) pattern was not used in the samples. It’s done
 
 ### Which types of applications and frameworks are supported by the SDK?
 
-- Windows Phone applications (8.0 and higher).
-- Windows Store applications.
+- Windows Phone Silverlight (7.0 and higher).
+- Universal Windows Platform (UWP).
 - .NET 4.5 applications.
 
-### Is there any more documentation available?
+### Documentation
 
 The SDK classes, interfaces, functions have comments in standard C# XML format. Besides that there is documentation on the [AppMetrica API page][API]
-
-## License
-
-License agreement on use of AppMetrica SDK is available at: http://legal.yandex.ru/metrica_termsofuse/
-
 
 [LICENSE]: http://legal.yandex.ru/metrica_termsofuse/
 [API]: http://api.yandex.ru/metrica-mobile-sdk/doc/mobile-sdk-dg/concepts/about.xml "AppMetrica documentation page"
