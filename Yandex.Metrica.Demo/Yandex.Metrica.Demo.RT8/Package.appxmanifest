@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="ad23a69d-05e7-4080-b75b-02c2079a6e0f" Publisher="CN=makeman" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Yandex.Metrica.Demo</DisplayName>
+    <PublisherDisplayName>makeman</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Yandex.Metrica.Demo.App">
+      <VisualElements DisplayName="Yandex.Metrica.Demo" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Yandex.Metrica.Demo" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>
