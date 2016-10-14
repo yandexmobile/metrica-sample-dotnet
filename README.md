@@ -3,7 +3,7 @@
 This is a sample application that demonstrates basic usage of Yandex AppMetrica.
 
 ## Documentation
-Documentation could be found at [AppMetrica official site] [DOCUMENTATION]
+Documentation could be found at [AppMetrica homepage] [DOCUMENTATION]
 
 ## Quick start
 
