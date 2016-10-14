@@ -1,0 +1,90 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Yandex.Metrica.Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    Name="This">
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style TargetType="TextBox">
+                <Setter Property="MinWidth" Value="55"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
+        </Grid.Resources>
+
+        <controls:Pivot>
+            <controls:PivotItem Header="Generate">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBox Name="EventNameTextBox" Text="Event Name"/>
+                    <Button Name="EventButton" Content="Event"/>
+                    <Button Name="JsonButton" Content="Json"/>
+                    <TextBox Name="ErrorNameTextBox" Text="Error Name"/>
+                    <Button Name="ErrorButton" Content="Error" />
+                    <Button Name="CrashButton" Content="Crash" />
+                </StackPanel>
+            </controls:PivotItem>
+            <controls:PivotItem Header="Settings">
+                <StackPanel DataContext="{Binding ElementName=This, Path=YandexMetricaConfig}">
+                    <CheckBox Content="Offline Mode" IsChecked="{Binding OfflineMode, Mode=TwoWay}"/>
+                    <CheckBox Content="Crash Traking" IsChecked="{Binding CrashTracking, Mode=TwoWay}"/>
+                    <CheckBox Content="Location Traking" IsChecked="{Binding LocationTracking, Mode=TwoWay}"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="App Version"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding CustomAppVersion, Mode=TwoWay, ValidatesOnExceptions=True}"/>
+
+                        <StackPanel
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Orientation="Horizontal">
+                            <TextBlock Text="Lat"/>
+                            <TextBox Text="{Binding ElementName=This, Path=Location.Lat, Mode=TwoWay, ValidatesOnExceptions=True}"/>
+                            <TextBlock Text="Long"/>
+                            <TextBox Text="{Binding ElementName=This, Path=Location.Lon, Mode=TwoWay, ValidatesOnExceptions=True}"/>
+
+                        </StackPanel>
+                        <Button
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Name="LocationButton"
+                            Content="Set Location"
+                            HorizontalAlignment="Stretch"/>
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Session Timeout"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SessionTimeout, Mode=TwoWay, ValidatesOnExceptions=True}"/>
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Lib Version"/>
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding LibraryVersion}"/>
+
+                        <Button Grid.Row="4" Grid.Column="0" Content="Reset All" Name="ResetButton"/>
+                    </Grid>
+                </StackPanel>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+ 
+</phone:PhoneApplicationPage>
