@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Yandex.Metrica.Demo.MainPage"
+    x:Class="AppMetrica.Demo.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Name="This">
@@ -49,13 +49,17 @@
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
+                            <RowDefinition/>
                         </Grid.RowDefinitions>
 
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="App Version"/>
-                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding CustomAppVersion, Mode=TwoWay}"/>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="App Id"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding CustomAppId, Mode=TwoWay}"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="App Version"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding CustomAppVersion, Mode=TwoWay}"/>
 
                         <StackPanel
-                            Grid.Row="1"
+                            Grid.Row="2"
                             Grid.Column="0"
                             Grid.ColumnSpan="2"
                             Orientation="Horizontal">
@@ -66,19 +70,19 @@
 
                         </StackPanel>
                         <Button
-                            Grid.Row="1"
+                            Grid.Row="2"
                             Grid.Column="1"
                             Name="LocationButton"
                             Content="Set Location"
                             HorizontalAlignment="Stretch"/>
 
-                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Session Timeout"/>
-                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SessionTimeout, Mode=TwoWay}"/>
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Session Timeout"/>
+                        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SessionTimeout, Mode=TwoWay}"/>
 
-                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Lib Version"/>
-                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding LibraryVersion}"/>
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Lib Version"/>
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding LibraryVersion}"/>
 
-                        <Button Grid.Row="4" Grid.Column="0" Content="Reset All" Name="ResetButton"/>
+                        <Button Grid.Row="5" Grid.Column="0" Content="Reset All" Name="ResetButton"/>
                     </Grid>
                 </StackPanel>
             </PivotItem>

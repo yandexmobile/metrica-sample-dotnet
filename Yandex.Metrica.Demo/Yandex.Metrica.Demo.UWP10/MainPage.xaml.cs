@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Serialization;
+using Windows.ApplicationModel.Background;
+using Yandex.Metrica;
 
-namespace Yandex.Metrica.Demo
+namespace AppMetrica.Demo
 {
     [DataContract]
     public class Person
@@ -44,8 +47,6 @@ namespace Yandex.Metrica.Demo
             Location = new YandexMetrica.Location();
             InitializeComponent();
 
-            var apiKey = new Guid("141aee51-f778-4951-adb8-97d811aa06e1"); // sample key should be replaced !!!
-            YandexMetrica.Activate(apiKey);
             //Loaded += (sender, args) => YandexMetrica.ReportEvent("Hello!");
             //Unloaded += (sender, args) => YandexMetrica.ReportEvent("Bye!");
 
@@ -75,10 +76,24 @@ namespace Yandex.Metrica.Demo
 
             JsonButton.Click += (sender, args) => YandexMetrica.ReportEvent("abc", JsonData.GetObject());
             JsonButton.Click += (sender, args) => YandexMetrica.ReportEvent("abc", JsonData.GetDictionary());
+
+            TaskButton.Click += async (sender, args) => await _trigger.RequestAsync();
+            PrepareTask();
         }
 
         public YandexMetrica.Location Location { get; set; }
 
-        public Models.Config YandexMetricaConfig => YandexMetrica.Config;
+        public Yandex.Metrica.Models.Config YandexMetricaConfig => YandexMetrica.Config;
+
+        private readonly ApplicationTrigger _trigger = new ApplicationTrigger();
+
+        private void PrepareTask()
+        {
+            var taskName = "AppTask";
+            BackgroundTaskRegistration.AllTasks.Values.FirstOrDefault(t=>t.Name == taskName)?.Unregister(true);
+            var taskBuilder = new BackgroundTaskBuilder {TaskEntryPoint = "AppMetricaTask.AppTask", Name = taskName};
+            taskBuilder.SetTrigger(_trigger);
+            taskBuilder.Register();
+        }
     }
 }

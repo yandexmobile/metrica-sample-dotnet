@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using System.Windows;
+using Microsoft.Phone.Scheduler;
+using Yandex.Metrica;
 
-namespace Yandex.Metrica.Demo
+namespace AppMetrica.Demo
 {
     [DataContract]
     public class Person
@@ -44,11 +47,9 @@ namespace Yandex.Metrica.Demo
             Location = new YandexMetrica.Location();
             InitializeComponent();
 
-            var apiKey = new Guid("141aee51-f778-4951-adb8-97d811aa06e1"); // sample key should be replaced !!!
-            YandexMetrica.Activate(apiKey);
             //Loaded += (sender, args) => YandexMetrica.ReportEvent("Hello!");
             //Unloaded += (sender, args) => YandexMetrica.ReportEvent("Bye!");
-            
+
             LocationButton.Click += (sender, args) => YandexMetricaConfig.SetCustomLocation(Location);
             EventButton.Click += (sender, args) => YandexMetrica.ReportEvent(EventNameTextBox.Text);
             CrashButton.Click += (sender, args) => { throw new Exception(); };
@@ -75,13 +76,31 @@ namespace Yandex.Metrica.Demo
 
             JsonButton.Click += (sender, args) => YandexMetrica.ReportEvent("abc", JsonData.GetObject());
             JsonButton.Click += (sender, args) => YandexMetrica.ReportEvent("abc", JsonData.GetDictionary());
+            TaskButton.Click += (sender, args) => PrepareTask();
         }
 
         public YandexMetrica.Location Location { get; set; }
 
-        public Models.Config YandexMetricaConfig
+        public Yandex.Metrica.Models.Config YandexMetricaConfig
         {
             get { return YandexMetrica.Config; }
+        }
+
+        private void PrepareTask()
+        {
+            var taskName = "AppTask";
+            var task = ScheduledActionService.Find(taskName);
+            if (task != null) ScheduledActionService.Remove(taskName);
+            task = new PeriodicTask(taskName);
+
+            try
+            {
+                ScheduledActionService.Add(task);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
     }
 }

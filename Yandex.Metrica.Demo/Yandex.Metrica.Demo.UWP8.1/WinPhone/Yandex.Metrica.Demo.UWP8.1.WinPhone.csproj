@@ -7,7 +7,7 @@
     <ProjectGuid>{249E177C-FB25-4CE3-89E4-54B4BF08E6C2}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Yandex.Metrica.Demo</RootNamespace>
+    <RootNamespace>AppMetrica.Demo</RootNamespace>
     <AssemblyName>Yandex.Metrica.Demo.UWP8.1.WindowsPhone</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
@@ -107,8 +107,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Yandex.Metrica.WP8.1, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Yandex.Metrica.3.2.0\lib\wpa\Yandex.Metrica.WP8.1.dll</HintPath>
+    <Reference Include="Yandex.Metrica.WP8.1, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Yandex.Metrica.3.3.0\lib\wpa\Yandex.Metrica.WP8.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

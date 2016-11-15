@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Demo.UWP8.1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Metrica.Demo.UWP10", "Yandex.Metrica.Demo\Yandex.Metrica.Demo.UWP10\Yandex.Metrica.Demo.UWP10.csproj", "{8A0A4A21-203A-4C3D-B6F5-A868FD037ECC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMetricaTask", "Yandex.Metrica.Demo\AppMetricaTask\AppMetricaTask.csproj", "{24727044-0CBC-4B59-BBB1-6812356569AA}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Yandex.Metrica.Demo\Yandex.Metrica.Demo.UWP8.1\Shared\Yandex.Metrica.Demo.UWP8.1.Shared.projitems*{249e177c-fb25-4ce3-89e4-54b4bf08e6c2}*SharedItemsImports = 4
@@ -104,6 +106,22 @@ Global
 		{8A0A4A21-203A-4C3D-B6F5-A868FD037ECC}.Release|x86.ActiveCfg = Release|x86
 		{8A0A4A21-203A-4C3D-B6F5-A868FD037ECC}.Release|x86.Build.0 = Release|x86
 		{8A0A4A21-203A-4C3D-B6F5-A868FD037ECC}.Release|x86.Deploy.0 = Release|x86
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|ARM.Build.0 = Debug|ARM
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|x64.ActiveCfg = Debug|x64
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|x64.Build.0 = Debug|x64
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|x86.ActiveCfg = Debug|x86
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Debug|x86.Build.0 = Debug|x86
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|ARM.ActiveCfg = Release|ARM
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|ARM.Build.0 = Release|ARM
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|x64.ActiveCfg = Release|x64
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|x64.Build.0 = Release|x64
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|x86.ActiveCfg = Release|x86
+		{24727044-0CBC-4B59-BBB1-6812356569AA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,5 +132,6 @@ Global
 		{249E177C-FB25-4CE3-89E4-54B4BF08E6C2} = {F9C39E84-C705-4ED9-A934-96E706C20543}
 		{49FB9DD8-2A7B-4ED2-A0F2-1B5DE400E60A} = {F9C39E84-C705-4ED9-A934-96E706C20543}
 		{8A0A4A21-203A-4C3D-B6F5-A868FD037ECC} = {3B19E98B-DEC5-4F8B-B052-B2182A91F0A0}
+		{24727044-0CBC-4B59-BBB1-6812356569AA} = {3B19E98B-DEC5-4F8B-B052-B2182A91F0A0}
 	EndGlobalSection
 EndGlobal

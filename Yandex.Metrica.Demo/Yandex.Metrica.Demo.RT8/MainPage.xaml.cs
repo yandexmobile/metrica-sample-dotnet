@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Yandex.Metrica;
 
-namespace Yandex.Metrica.Demo
+namespace AppMetrica.Demo
 {
     [DataContract]
     public class Person
@@ -44,8 +45,6 @@ namespace Yandex.Metrica.Demo
             Location = new YandexMetrica.Location();
             InitializeComponent();
 
-            var apiKey = new Guid("141aee51-f778-4951-adb8-97d811aa06e1"); // sample key should be replaced !!!
-            YandexMetrica.Activate(apiKey);
             Loaded += (sender, args) => YandexMetrica.ReportEvent("Hello!");
             Unloaded += (sender, args) => YandexMetrica.ReportEvent("Bye!");
 
@@ -79,7 +78,7 @@ namespace Yandex.Metrica.Demo
 
         public YandexMetrica.Location Location { get; set; }
 
-        public Models.Config YandexMetricaConfig
+        public Yandex.Metrica.Models.Config YandexMetricaConfig
         {
             get { return YandexMetrica.Config; }
         }

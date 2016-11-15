@@ -1,5 +1,5 @@
 ﻿<Window
-    x:Class="Yandex.Metrica.Demo.MainWindow"
+    x:Class="AppMetrica.Demo.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="Yandex Metrica Demo"
