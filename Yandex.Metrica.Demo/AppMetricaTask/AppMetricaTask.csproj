@@ -111,12 +111,6 @@
     <Compile Include="AppTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Yandex.Metrica\UWP10\Yandex.Metrica.UWP10.csproj">
-      <Project>{c31c8456-edf8-4b2f-8155-e4a0e0132fd2}</Project>
-      <Name>Yandex.Metrica.UWP10</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -43,7 +43,7 @@ namespace AppTaskAgent
             //TODO: Add code to perform your task in background
 
             YandexMetrica.Config.LocationTracking = false;
-            YandexMetrica.Activate("141aee51-f778-4951-adb8-97d811aa06e1");
+            YandexMetrica.Activate("Yours Api Key");
             YandexMetrica.ReportEvent("Hello from background!");
             YandexMetrica.Snapshot();
             NotifyComplete();

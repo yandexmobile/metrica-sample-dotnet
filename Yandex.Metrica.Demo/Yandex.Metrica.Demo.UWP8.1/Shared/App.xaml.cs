@@ -28,7 +28,6 @@ namespace AppMetrica.Demo
         {
             InitializeComponent();
             Suspending += OnSuspending;
-            YandexMetrica.Activate("141aee51-f778-4951-adb8-97d811aa06e1");
         }
 
         /// <summary>
@@ -39,6 +38,8 @@ namespace AppMetrica.Demo
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            YandexMetrica.Activate("Yours Api Key");
+
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
