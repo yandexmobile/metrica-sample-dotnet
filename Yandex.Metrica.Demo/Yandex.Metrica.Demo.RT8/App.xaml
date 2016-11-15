@@ -18,6 +18,7 @@
             <metrica:YandexMetricaActivator
                 x:Key="MetricaActivator" 
                 ApiKey="Yours Api Key"/>
+            <!--TODO: https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/winphone-quickstart-docpage/-->
         </ResourceDictionary>
     </Application.Resources>
 </Application>

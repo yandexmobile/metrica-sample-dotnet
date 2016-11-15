@@ -90,12 +90,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Yandex.Metrica\Yandex.Metrica.WP8.csproj">
-      <Project>{3F81E86D-6B24-4E24-AAD7-DB56DD2353FE}</Project>
-      <Name>Yandex.Metrica.WP8</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +104,9 @@
     </Reference>
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Yandex.Metrica.WP8">
+      <HintPath>..\..\packages\Yandex.Metrica.3.3.0\lib\windowsphone8\Yandex.Metrica.WP8.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

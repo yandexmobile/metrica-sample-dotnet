@@ -9,6 +9,7 @@ namespace AppMetricaTask
         {
             var deferral = taskInstance.GetDeferral();
             YandexMetrica.Config.LocationTracking = false;
+            //TODO: https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/winphone-quickstart-docpage/
             YandexMetrica.Activate("Yours Api Key");
             YandexMetrica.ReportEvent("Hello from background!");
             YandexMetrica.Snapshot();

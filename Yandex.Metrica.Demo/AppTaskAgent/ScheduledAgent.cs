@@ -42,6 +42,7 @@ namespace AppTaskAgent
         {
             //TODO: Add code to perform your task in background
 
+            //TODO: https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/winphone-quickstart-docpage/-->
             YandexMetrica.Config.LocationTracking = false;
             YandexMetrica.Activate("Yours Api Key");
             YandexMetrica.ReportEvent("Hello from background!");

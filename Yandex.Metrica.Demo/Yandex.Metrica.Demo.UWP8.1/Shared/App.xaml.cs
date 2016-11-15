@@ -38,6 +38,7 @@ namespace AppMetrica.Demo
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            //TODO: https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/winphone-quickstart-docpage/
             YandexMetrica.Activate("Yours Api Key");
 
 #if DEBUG
