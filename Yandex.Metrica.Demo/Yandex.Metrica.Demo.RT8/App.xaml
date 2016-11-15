@@ -17,7 +17,7 @@
 
             <metrica:YandexMetricaActivator
                 x:Key="MetricaActivator" 
-                ApiKey="141aee51-f778-4951-adb8-97d811aa06e1"/>
+                ApiKey="Yours Api Key"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
