@@ -14,6 +14,9 @@
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+      <ExtendedTask Name="BackgrounTask">
+        <BackgroundServiceAgent Specifier="ScheduledTaskAgent" Name="AppTaskAgent" Source="AppTaskAgent" Type="AppTaskAgent.ScheduledAgent"/>
+      </ExtendedTask>
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="Yandex.Metrica.WP8Token" TaskName="_default">

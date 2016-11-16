@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
+﻿using System.Windows;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace Yandex.Metrica.WP7
+namespace AppMetrica.Demo
 {
-    public partial class App : Application
+    public partial class App
     {
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
@@ -40,7 +31,7 @@ namespace Yandex.Metrica.WP7
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 // Display the current frame rate counters.
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+                Current.Host.Settings.EnableFrameRateCounter = true;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
@@ -105,12 +96,12 @@ namespace Yandex.Metrica.WP7
         #region Phone application initialization
 
         // Avoid double-initialization
-        private bool phoneApplicationInitialized = false;
+        private bool _phoneApplicationInitialized;
 
         // Do not add any additional code to this method
         private void InitializePhoneApplication()
         {
-            if (phoneApplicationInitialized)
+            if (_phoneApplicationInitialized)
                 return;
 
             // Create the frame but don't set it as RootVisual yet; this allows the splash
@@ -122,7 +113,7 @@ namespace Yandex.Metrica.WP7
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
 
             // Ensure we don't initialize again
-            phoneApplicationInitialized = true;
+            _phoneApplicationInitialized = true;
         }
 
         // Do not add any additional code to this method

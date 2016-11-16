@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
+using AppMetrica.Demo.Resources;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Yandex.Metrica.Demo.Resources;
 
-namespace Yandex.Metrica.Demo
+namespace AppMetrica.Demo
 {
     public partial class App
     {
@@ -38,7 +38,7 @@ namespace Yandex.Metrica.Demo
             if (Debugger.IsAttached)
             {
                 // Display the current frame rate counters.
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+                Current.Host.Settings.EnableFrameRateCounter = true;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
@@ -103,12 +103,12 @@ namespace Yandex.Metrica.Demo
         #region Phone application initialization
 
         // Avoid double-initialization
-        private bool phoneApplicationInitialized = false;
+        private bool _phoneApplicationInitialized;
 
         // Do not add any additional code to this method
         private void InitializePhoneApplication()
         {
-            if (phoneApplicationInitialized)
+            if (_phoneApplicationInitialized)
                 return;
 
             // Create the frame but don't set it as RootVisual yet; this allows the splash
@@ -123,7 +123,7 @@ namespace Yandex.Metrica.Demo
             RootFrame.Navigated += CheckForResetNavigation;
 
             // Ensure we don't initialize again
-            phoneApplicationInitialized = true;
+            _phoneApplicationInitialized = true;
         }
 
         // Do not add any additional code to this method
@@ -157,7 +157,7 @@ namespace Yandex.Metrica.Demo
             // For UI consistency, clear the entire page stack
             while (RootFrame.RemoveBackEntry() != null)
             {
-                ; // do nothing
+                // do nothing
             }
         }
 

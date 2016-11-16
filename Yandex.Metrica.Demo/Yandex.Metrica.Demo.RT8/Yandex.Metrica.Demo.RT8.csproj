@@ -7,7 +7,7 @@
     <ProjectGuid>{D3ED4CCB-296E-4CA1-A7C2-3553ECAD26C7}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Yandex.Metrica.Demo</RootNamespace>
+    <RootNamespace>AppMetrica.Demo</RootNamespace>
     <AssemblyName>Yandex.Metrica.Demo</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
@@ -138,8 +138,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Yandex.Metrica.RT8">
-      <HintPath>..\..\packages\Yandex.Metrica.3.2.0\lib\windows8\Yandex.Metrica.RT8.dll</HintPath>
+    <Reference Include="Yandex.Metrica.RT8, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Yandex.Metrica.3.3.0\lib\windows8\Yandex.Metrica.RT8.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">

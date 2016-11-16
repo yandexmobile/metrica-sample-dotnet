@@ -1,12 +1,9 @@
 ﻿<Application
-    x:Class="Yandex.Metrica.Demo.App"
+    x:Class="AppMetrica.Demo.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
-
-    <!--Application Resources-->
-    <Application.Resources>
-    </Application.Resources>
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:metrica="clr-namespace:Yandex.Metrica;assembly=Yandex.Metrica.WP8">
 
     <Application.ApplicationLifetimeObjects>
         <!--Required object that handles lifetime events for the application-->
@@ -14,5 +11,13 @@
             Launching="Application_Launching" Closing="Application_Closing"
             Activated="Application_Activated" Deactivated="Application_Deactivated"/>
     </Application.ApplicationLifetimeObjects>
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <metrica:YandexMetricaActivator 
+            x:Key="MetricaActivator" 
+            ApiKey="Yours Api Key"/>
+        <!--TODO: https://tech.yandex.com/metrica-mobile-sdk/doc/mobile-sdk-dg/tasks/winphone-quickstart-docpage/-->
+    </Application.Resources>
 
 </Application>
